@@ -1,35 +1,35 @@
+import java.util.Scanner;
+class Plinko{
 
-class Plinko {
-    import java.util.Scanner;
-    public static final int SINGLE_DISC = 1;
-    public static final int MULTI_DISC = 2;
-    public static final int TERMINATE = 3;
 
-    public static final int[] VALUES = {1, 3, 2, 0, 5, 0, 2, 3, 1};
+        public static final int SINGLE_DISC = 1;
+        public static final int MULTI_DISC = 2;
+        public static final int TERMINATE = 3;
+        public static final int[] VALUES = {1, 3, 2, 0, 5, 0, 2, 3, 1};
 
-    public static int mode = -1;
-    public static int startingPosition = -1;
-    public static int numDiscs = 1;
+        public static int mode = -1;
+        public static int startingPosition = -1;
+        public static int numDiscs = 1;
 
-    public static void main(String[] args) {
-        Scanner scan;
-        while(true) {
-            //Loop to select mode.
-            //This loop is infinite until the user selects the "Quit" option (3)
-            Boolean isMultiDisc = false;
-            scan = new Scanner(System.in);
-            printModeStatement();
-            if(scan.hasNextInt()) {
-                mode = scan.nextInt();
-                if(mode == SINGLE_DISC) {
-                    isMultiDisc = false;
-                }
-                else if(mode == MULTI_DISC) {
-                    isMultiDisc = true;
-                }
-                else if(mode == TERMINATE) {
-                    System.out.println("Goodbye");
-                    break;
+        public static void main(String[] args) {
+            Scanner scan;
+            while(true) {
+                //Loop to select mode.
+                //This loop is infinite until the user selects the "Quit" option (3)
+                Boolean isMultiDisc = false;
+                scan = new Scanner(System.in);
+                printModeStatement();
+                if(scan.hasNextInt()) {
+                    mode = scan.nextInt();
+                    if( mode == SINGLE_DISC) {
+                      isMultiDisc = false;
+                 }
+                 else if( mode == MULTI_DISC) {
+                        isMultiDisc = true;
+                 }
+                    else if(mode == TERMINATE) {
+                      System.out.println("Goodbye");
+                        break;
                 } else {
                     continue;
                 }
@@ -38,17 +38,72 @@ class Plinko {
             collectSettings(isMultiDisc);
             runPlinko(isMultiDisc);
         }
+            // }       
     }
 
     public static void runPlinko(Boolean isMultiDisc) {
-        
+        for (numDiscs)
+
+
     }
 
     public static void printOddRow(int discPosition) {
+       if( position ==1){
+            System.out.println("(.0. . . . . . . . .)");
+            }
+       if( position ==3){
+            System.out.println("(. .0. . . . . . . .)");
+            }
+       if( position ==5){
+            System.out.println("(. . .0. . . . . . .)");
+            }
+       if( position ==7){
+            System.out.println("(. . . .0. . . . . .)");
+            }
+       if( position ==9){
+            System.out.println("(. . . . .0. . . . .)");}
+       if( position ==11){
+            System.out.println("(. . . . . .0. . . .)");
+            }
+       if( position ==13){
+            System.out.println("(. . . . . . .0. . .)");
+            }
+       if( position ==15){
+            System.out.println("(. . . . . . . .0. .)");
+            }      
+       if( position ==17){
+            System.out.println("(. . . . . . . . .0.)");
+            }            
         //Print the visualization of an odd numbered row with the disc in the provided position.
     }
 
     public static void printEvenRow(int discPosition) {
+      if(position ==0){
+            System.out.println("(0. . . . . . . . . )");
+            }
+      if(position ==2){
+            System.out.println("( .0. . . . . . . . )");
+            }
+      if(position ==4){
+            System.out.println("( . .0. . . . . . . )");
+            }
+      if (position ==6){
+            System.out.println("( . . .0. . . . . . )");
+            }
+      if (position ==8){
+            System.out.println("( . . . .0. . . . . )");
+            }
+      if (position ==10){
+            System.out.println("( . . . . .0.. . . )");}
+      if (position ==12){
+            System.out.println("( . . . . . .0. . . )");
+            }
+      if (position ==14){
+            System.out.println("( . . . . . . .0. . )");
+            } 
+      if (position ==16){
+            System.out.println("( . . . . . . . .0. )");
+            } 
         //Print the visualization of an even numbered row with the disc in the provided position.
     }
 
