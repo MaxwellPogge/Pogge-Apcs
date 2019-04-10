@@ -19,10 +19,10 @@ class Arrays {
         //System.out.println( numArray[5]);
         //System.out.println( numArray[9]);
         
-        int[] fibonacci = {1, 1, 2, 3, 5, 8, 13, 21, 34, 55}; 
-         System.out.println( fibonacci[4]);
-         System.out.println( fibonacci[7]);
-         System.out.println( fibonacci[9]);
+    //    int[] fibonacci = {1, 1, 2, 3, 5, 8, 13, 21, 34, 55}; 
+    //     System.out.println( fibonacci[4]);
+    //     System.out.println( fibonacci[7]);
+    //     System.out.println( fibonacci[9]);
     }
 
 }
